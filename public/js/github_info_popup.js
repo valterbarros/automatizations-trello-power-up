@@ -67,7 +67,7 @@ t.render(() => {
 
     const reposUrl = `https://api.github.com/user/repos?sort=pushed&per_page=20`
 
-    return fetch(reposUrl, {
+    fetch(reposUrl, {
       headers: {
         Authorization: `token ${githubToken}`
       }
